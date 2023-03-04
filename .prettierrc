@@ -7,14 +7,14 @@
   "tabWidth": 2,
   "overrides": [
     {
-      "files": "*.sol",
+      "files": ["*.sol", "*.SOL"],
       "options": {
         "tabWidth": 4,
         "printWidth": 120
       }
     },
     {
-      "files": "*.ts",
+      "files": ["*.ts", "*.TS"],
       "options": {
         "importOrder": ["<THIRD_PARTY_MODULES>", "^[./]"],
         "importOrderParserPlugins": ["typescript"],

@@ -20,6 +20,8 @@ npm install -g yarn
 
 yarn install
 
+yarn prepare
+
 ```
 
 ## 快捷命令
@@ -32,17 +34,19 @@ yarn install
     # 执行合约测试用例
     yarn test
     # 合约测试覆盖率
-    yarn test:coverage
+    yarn coverage
     # 合约大小检测
-    yarn test:size-contracts
-    # 合约格式化检测
-    yarn lint:sol
-    # 合约格式化执行
-    yarn lint:sol:fix
+    yarn size
+    # 导出abi文件
+    yarn abi
+    # 全局格式化检测
+    yarn lint
+    # 全局格式化执行
+    yarn lint:fix
 
 ```
 
-## Hardhat命令
+## Hardhat 命令
 
 ```bash
 npx hardhat accounts

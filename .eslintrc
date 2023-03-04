@@ -9,7 +9,7 @@
     "browser" : true,
     "node"    : true,
     "mocha"   : true,
-    "jest"    : true,
+    "jest"    : true
   },
   "globals" : {
     "artifacts": false,
@@ -17,7 +17,7 @@
     "assert": false,
     "web3": false,
     "usePlugin": false,
-    "extendEnvironment": false,
+    "extendEnvironment": false
   },
   "rules": {
 
@@ -54,7 +54,7 @@
     "mocha/no-exclusive-tests": ["error"],
 
     "promise/always-return": "off",
-    "promise/avoid-new": "off",
+    "promise/avoid-new": "off"
   },
   "parserOptions": {
     "ecmaVersion": 2020

@@ -20,20 +20,28 @@ npm install -g yarn
 
 yarn install
 
+yarn prepare
+
 ```
 
 ## Quick Commands
 
-```bash
+    # Compile the contract
     yarn compile
+    # Deploy the contract
     yarn deploy
+    # Run contract test cases
     yarn test
-    yarn test:coverage
-    yarn test:size-contracts
-    yarn lint:sol
-    yarn lint:sol:fix
-
-```
+    # Check contract code coverage
+    yarn coverage
+    # Check contract size
+    yarn size
+    # Export ABI file
+    yarn abi
+    # Perform global formatting check
+    yarn lint
+    # Perform global formatting write
+    yarn lint:fix
 
 ## Hardhat Commands
 

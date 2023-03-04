@@ -1,17 +1,17 @@
-import '@nomiclabs/hardhat-ethers';
-import '@nomiclabs/hardhat-waffle';
-import '@nomiclabs/hardhat-etherscan';
-import 'dotenv/config';
-import '@typechain/hardhat';
-import { task } from 'hardhat/config';
-import '@nomiclabs/hardhat-solhint';
-import 'hardhat-gas-reporter';
-import 'hardhat-abi-exporter';
-import 'solidity-coverage';
+import "@nomiclabs/hardhat-ethers";
+import "@nomiclabs/hardhat-waffle";
+import "@nomiclabs/hardhat-etherscan";
+import "dotenv/config";
+import "@typechain/hardhat";
+import { task } from "hardhat/config";
+import "@nomiclabs/hardhat-solhint";
+import "hardhat-gas-reporter";
+import "hardhat-abi-exporter";
+import "solidity-coverage";
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
-task('accounts', 'Prints the list of accounts', async (taskArgs, hre) => {
+task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   const accounts = await hre.ethers.getSigners();
 
   for (const account of accounts) {
@@ -20,7 +20,7 @@ task('accounts', 'Prints the list of accounts', async (taskArgs, hre) => {
 });
 
 export default {
-  defaultNetwork: 'hardhat',
+  defaultNetwork: "hardhat",
   networks: {
     hardhat: {
       allowUnlimitedContractSize: false,
@@ -50,14 +50,14 @@ export default {
       timeout: 10 * 60 * 1000,
     },
     bnb: {
-      url: 'https://bsc-dataseed.binance.org/',
+      url: "https://bsc-dataseed.binance.org/",
       accounts: [process.env.PRIVATE_KEY],
       chainId: 56,
       live: true,
       saveDeployments: true,
     },
     bnbTest: {
-      url: 'https://data-seed-prebsc-2-s2.binance.org:8545/',
+      url: "https://data-seed-prebsc-2-s2.binance.org:8545/",
       accounts: [process.env.PRIVATE_KEY],
       chainId: 97,
       live: true,
@@ -102,7 +102,7 @@ export default {
     apiKey: process.env.ETHERSCAN_API_KEY,
   },
   gasReporter: {
-    currency: 'USDT',
+    currency: "USDT",
     enabled: !!process.env.REPORT_GAS,
   },
   contractSizer: {
@@ -113,22 +113,22 @@ export default {
     only: [],
   },
   abiExporter: {
-    path: 'abi',
+    path: "abi",
     clear: true,
     flat: false,
   },
   solidity: {
-    version: '0.8.19',
+    version: "0.8.19",
     settings: {
       optimizer: {
-        enabled: true,
+        enabled: false,
         runs: 10000,
       },
       metadata: {
         // do not include the metadata hash, since this is machine dependent
         // and we want all generated code to be deterministic
         // https://docs.soliditylang.org/en/v0.7.6/metadata.html
-        bytecodeHash: 'none',
+        bytecodeHash: "none",
       },
     },
   },
