@@ -16,32 +16,32 @@ English | [简体中文](./README_zh.md)
 
 ```bash
 
-npm install -g yarn
+npm install -g pnpm
 
-yarn install
+pnpm install
 
-yarn prepare
+pnpm prepare
 
 ```
 
 ## Quick Commands
 
     # Compile the contract
-    yarn compile
+    pnpm compile
     # Deploy the contract
-    yarn deploy
+    pnpm deploy
     # Run contract test cases
-    yarn test
+    pnpm test
     # Check contract code coverage
-    yarn coverage
+    pnpm coverage
     # Check contract size
-    yarn size
+    pnpm size
     # Export ABI file
-    yarn abi
+    pnpm abi
     # Perform global formatting check
-    yarn lint
+    pnpm lint
     # Perform global formatting write
-    yarn lint:fix
+    pnpm lint:fix
 
 ## Hardhat Commands
 

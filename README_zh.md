@@ -16,11 +16,11 @@
 
 ```bash
 
-npm install -g yarn
+npm install -g pnpm
 
-yarn install
+pnpm install
 
-yarn prepare
+pnpm prepare
 
 ```
 
@@ -28,21 +28,21 @@ yarn prepare
 
 ```bash
     # 执行合约编译
-    yarn compile
+    pnpm compile
     # 执行合约部署
-    yarn deploy
+    pnpm deploy
     # 执行合约测试用例
-    yarn test
+    pnpm test
     # 合约测试覆盖率
-    yarn coverage
+    pnpm coverage
     # 合约大小检测
-    yarn size
+    pnpm size
     # 导出abi文件
-    yarn abi
+    pnpm abi
     # 全局格式化检测
-    yarn lint
+    pnpm lint
     # 全局格式化执行
-    yarn lint:fix
+    pnpm lint:fix
 
 ```
 

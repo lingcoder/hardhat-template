@@ -1,5 +1,5 @@
-import "@nomiclabs/hardhat-ethers";
-import "@nomiclabs/hardhat-etherscan";
+import "@nomicfoundation/hardhat-ethers";
+import "@nomicfoundation/hardhat-verify";
 import { ethers, run } from "hardhat";
 import { Contract, ContractFactory } from "ethers";
 
