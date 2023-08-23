@@ -1,13 +1,12 @@
 import "@nomicfoundation/hardhat-toolbox";
 import "@nomicfoundation/hardhat-verify";
-import "@nomiclabs/hardhat-waffle";
 import "dotenv/config";
 import "@typechain/hardhat";
 import "@nomiclabs/hardhat-solhint";
 import "hardhat-gas-reporter";
 import "hardhat-abi-exporter";
 import "solidity-coverage";
-import "./tasks/accounts";
+import "./task/accounts";
 
 export default {
   defaultNetwork: "hardhat",

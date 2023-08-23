@@ -2,7 +2,7 @@ import { assert, expect } from "chai";
 import { ethers, network } from "hardhat";
 import { describe } from "mocha";
 import { parseEther } from "ethers/lib/utils";
-import { BigNumber } from "ethers";
+import { BigNumberish } from "ethers";
 import { time } from "@nomicfoundation/hardhat-network-helpers";
 
 import "./util/types";
