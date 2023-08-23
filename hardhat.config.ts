@@ -1,9 +1,7 @@
 import "@nomicfoundation/hardhat-toolbox";
 import "@nomicfoundation/hardhat-verify";
 import "dotenv/config";
-import "@typechain/hardhat";
 import "@nomiclabs/hardhat-solhint";
-import "hardhat-gas-reporter";
 import "hardhat-abi-exporter";
 import "solidity-coverage";
 import "./task/accounts";

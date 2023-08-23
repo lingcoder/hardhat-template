@@ -1,7 +1,7 @@
-import "@nomicfoundation/hardhat-ethers";
+import "@nomicfoundation/hardhat-toolbox";
 import "@nomicfoundation/hardhat-verify";
-import { ethers, run } from "hardhat";
-import { Contract, ContractFactory } from "ethers";
+import { ethers } from "hardhat";
+import { getContractFactory } from "hardhat/types";
 
 async function sleep(seconds: number) {
   return new Promise((resolve) => setTimeout(resolve, seconds * 1000));
@@ -9,7 +9,7 @@ async function sleep(seconds: number) {
 
 async function main() {
   console.log("start deploy......");
-  const Token: ContractFactory = await ethers.getContractFactory("Greeter");
+  const Token: getContractFactory = await ethers.getContractFactory("Greeter");
 
   const token: Contract = await Token.deploy();
   await token.deployed();
