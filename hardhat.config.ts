@@ -1,10 +1,9 @@
+import "./task/accounts";
 import "@nomicfoundation/hardhat-toolbox";
 import "@nomicfoundation/hardhat-verify";
-import "dotenv/config";
 import "@nomiclabs/hardhat-solhint";
+import "dotenv/config";
 import "hardhat-abi-exporter";
-import "solidity-coverage";
-import "./task/accounts";
 
 export default {
   defaultNetwork: "hardhat",
@@ -105,7 +104,7 @@ export default {
     flat: false,
   },
   solidity: {
-    version: "0.8.19",
+    version: "0.8.20",
     settings: {
       optimizer: {
         enabled: false,

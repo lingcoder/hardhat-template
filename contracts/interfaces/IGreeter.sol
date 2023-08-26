@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.17;
+pragma solidity ^0.8.20;
 
 /**
  * @title IGreeter
@@ -16,5 +16,5 @@ interface IGreeter {
      * @dev Gets the name currently being greeted
      * @return Current greeting name
      */
-    function getName() external returns (string memory);
+    function getName() external view returns (string memory);
 }

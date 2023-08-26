@@ -1,6 +1,7 @@
 /* SPDX-License-Identifier: MIT */
-pragma solidity ^0.8.17;
+pragma solidity ^0.8.20;
 
+import { console } from "hardhat/console.sol";
 import { IGreeter } from "./interfaces/IGreeter.sol";
 
 contract Greeter is IGreeter {
@@ -11,6 +12,7 @@ contract Greeter is IGreeter {
     }
 
     function getName() public view virtual override returns (string memory) {
+        console.log("name=%s", _name);
         return _name;
     }
 }

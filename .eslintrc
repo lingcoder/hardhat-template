@@ -1,17 +1,13 @@
 {
-  "extends" : [
-    "standard"
-  ],
-  "plugins": [
-    "mocha"
-  ],
+  "extends": ["standard"],
+  "plugins": ["mocha"],
   "env": {
-    "browser" : true,
-    "node"    : true,
-    "mocha"   : true,
-    "jest"    : true
+    "browser": true,
+    "node": true,
+    "mocha": true,
+    "jest": true
   },
-  "globals" : {
+  "globals": {
     "artifacts": false,
     "contract": false,
     "assert": false,
@@ -20,16 +16,15 @@
     "extendEnvironment": false
   },
   "rules": {
-
     // Strict mode
     "strict": ["error", "global"],
 
     // Code style
     "array-bracket-spacing": ["off"],
-    "camelcase": ["error", {"properties": "always"}],
+    "camelcase": ["error", { "properties": "always" }],
     "comma-dangle": ["error", "always-multiline"],
-    "comma-spacing": ["error", {"before": false, "after": true}],
-    "dot-notation": ["error", {"allowKeywords": true, "allowPattern": ""}],
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "dot-notation": ["error", { "allowKeywords": true, "allowPattern": "" }],
     "eol-last": ["error", "always"],
     "eqeqeq": ["error", "smart"],
     "generator-star-spacing": ["error", "before"],
@@ -40,16 +35,16 @@
     "no-dupe-args": "error",
     "no-dupe-keys": "error",
     "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
-    "no-redeclare": ["error", {"builtinGlobals": true}],
+    "no-redeclare": ["error", { "builtinGlobals": true }],
     "no-trailing-spaces": ["error", { "skipBlankLines": false }],
     "no-undef": "error",
     "no-use-before-define": "off",
     "no-var": "error",
     "object-curly-spacing": ["error", "always"],
     "prefer-const": "error",
-    "quotes": ["error", "single"],
+    "quotes": "off",
     "semi": ["error", "always"],
-    "space-before-function-paren": ["error", "always"],
+    "space-before-function-paren": "off",
 
     "mocha/no-exclusive-tests": ["error"],
 
