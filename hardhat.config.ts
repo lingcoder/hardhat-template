@@ -92,6 +92,8 @@ export default {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
     apiKey: process.env.ETHERSCAN_API_KEY,
+    polygonMumbai: process.env.POLYGONSCAN_API_KEY,
+    polygon: process.env.POLYGONSCAN_API_KEY,
   },
   gasReporter: {
     currency: "USDT",

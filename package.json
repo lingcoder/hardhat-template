@@ -38,7 +38,6 @@
     "@types/node": "^18.18.0",
     "@typescript-eslint/eslint-plugin": "^6.7.3",
     "@typescript-eslint/parser": "^6.7.3",
-    "cross-env": "^7.0.3",
     "eslint": "^8.50.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-config-standard": "^17.1.0",
@@ -73,6 +72,8 @@
     "postinstall": "npx hardhat typechain",
     "compile": "npx hardhat compile",
     "clean": "npx hardhat clean",
+    "deploy:polygon": "npx hardhat run --network polygon scripts/deploy.ts",
+    "deploy:mumbai": "npx hardhat run --network mumbai scripts/deploy.ts",
     "deploy:goerli": "npx hardhat run --network goerli scripts/deploy.ts",
     "deploy:": "npx hardhat run --network mainnet scripts/deploy.ts",
     "test": "npx hardhat test",
@@ -86,6 +87,7 @@
     "format:write": "prettier --write **/*.{js,ts,sol,json}"
   },
   "dependencies": {
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "cross-env": "^7.0.3"
   }
 }
