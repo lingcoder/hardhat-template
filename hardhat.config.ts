@@ -2,6 +2,7 @@ import "./task/accounts";
 import "@nomicfoundation/hardhat-toolbox";
 import "@nomicfoundation/hardhat-verify";
 import "@nomiclabs/hardhat-solhint";
+import "@openzeppelin/hardhat-upgrades";
 import "dotenv/config";
 import "hardhat-abi-exporter";
 
