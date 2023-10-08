@@ -122,8 +122,8 @@ devDependencies:
     specifier: ^2.10.0
     version: 2.10.0(hardhat@2.18.0)
   hardhat-deploy:
-    specifier: ^0.11.40
-    version: 0.11.40
+    specifier: ^0.11.42
+    version: 0.11.42
   hardhat-ignore-warnings:
     specifier: ^0.2.9
     version: 0.2.9
@@ -4318,8 +4318,8 @@ packages:
       strip-ansi: 6.0.1
     dev: true
 
-  /hardhat-deploy@0.11.40:
-    resolution: {integrity: sha512-7MtrDnzok1msubP9A1l6hyzQWlR8nTdDgGeF/DpO4oPZLMXPgQwQBD03nYSUbAuitL/E0SbQnaodESRsyQ/sJw==}
+  /hardhat-deploy@0.11.42:
+    resolution: {integrity: sha512-sd0zzHV2Px2qxPCvIt0BCJm41rx/aS7ruOOXEUFe54rUk+8ViFNSSUll6BD9YaRzyfVBDMn9FT4Q40DakJ0tJA==}
     dependencies:
       '@ethersproject/abi': 5.7.0
       '@ethersproject/abstract-signer': 5.7.0

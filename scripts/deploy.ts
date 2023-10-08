@@ -1,4 +1,7 @@
-import { ethers } from "hardhat";
+import {
+  ethers,
+  /* run */
+} from "hardhat";
 
 async function main() {
   const ethValue = ethers.parseEther("0.0000000001");
@@ -9,7 +12,13 @@ async function main() {
 
   await instance.waitForDeployment();
 
-  console.log(`Greeter with ${ethers.formatEther(ethValue)}ETH  deployed to ${instance.target}`);
+  // const timeWait = 15;
+  // console.log(`waiting for ${timeWait} seconds... to verify contract`);
+  // await new Promise((resolve) => setTimeout(resolve, timeWait * 1000));
+  // run("verify:verify", {
+  //   address: instance.target,
+  //   constructorArguments: [],
+  // });
 }
 
 // We recommend this pattern to be able to use async/await everywhere

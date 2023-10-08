@@ -18,6 +18,7 @@ export default {
     },
     mainnet: {
       url: `https://mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
+      accounts: [process.env.PRIVATE_KEY],
       saveDeployments: true,
       live: true,
     },
@@ -47,6 +48,7 @@ export default {
       saveDeployments: true,
     },
     arbitrum: {
+      accounts: [process.env.PRIVATE_KEY],
       url: `https://arbitrum-mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
     },
     arbitrumGoerli: {
