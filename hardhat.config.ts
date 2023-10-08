@@ -101,6 +101,7 @@ export default {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
     apiKey: {
+      default: process.env.ETHERSCAN_API_KEY,
       mainnet: process.env.ETHERSCAN_API_KEY,
       goerli: process.env.ETHERSCAN_API_KEY,
       polygonMumbai: process.env.POLYGONSCAN_API_KEY,
@@ -124,7 +125,7 @@ export default {
     flat: false,
   },
   solidity: {
-    version: "0.8.20",
+    version: "0.8.21",
     settings: {
       optimizer: {
         enabled: false,
