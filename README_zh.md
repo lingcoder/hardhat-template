@@ -4,10 +4,10 @@
 <img src="./logo.svg" width=250" height="100" />
 </div>
 <div align=center>
-<img src="https://img.shields.io/badge/solidity-^0.8.17-blue"/>
-<img src="https://img.shields.io/badge/hardhat-^2.10.2-red"/>
-<img src="https://img.shields.io/badge/etherjs-v5-green"/>
-<img src="https://img.shields.io/badge/@openzeppelin-^4.8.0-green"/>
+<img src="https://img.shields.io/badge/solidity-^0.8.20-blue"/>
+<img src="https://img.shields.io/badge/hardhat-^2.18.0-red"/>
+<img src="https://img.shields.io/badge/etherjs-v6-green"/>
+<img src="https://img.shields.io/badge/@openzeppelin-^5.0.0-green"/>
 </div>
 
 [English](./README.md) | 简体中文
