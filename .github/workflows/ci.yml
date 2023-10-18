@@ -26,7 +26,7 @@ jobs:
         uses: "actions/setup-node@v3"
         with:
           cache: "pnpm"
-          node-version: "lts/*"
+          node-version: "20"
 
       - name: "Install the dependencies"
         run: "pnpm install"
