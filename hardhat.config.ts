@@ -101,13 +101,21 @@ export default {
   },
   etherscan: {
     // Your API key for Etherscan
-    // Obtain one at https://etherscan.io/
+    // To see the full list of supported networks, run `npx hardhat verify --list-networks`
     apiKey: {
-      default: process.env.ETHERSCAN_API_KEY,
       mainnet: process.env.ETHERSCAN_API_KEY,
       goerli: process.env.ETHERSCAN_API_KEY,
+      sepolia: process.env.ETHERSCAN_API_KEY,
+      optimisticGoerli: process.env.ETHERSCAN_API_KEY,
+      optimisticEthereum: process.env.ETHERSCAN_API_KEY,
+      arbitrumGoerli: process.env.ETHERSCAN_API_KEY,
+      arbitrumTestnet: process.env.ETHERSCAN_API_KEY,
       polygonMumbai: process.env.POLYGONSCAN_API_KEY,
       polygon: process.env.POLYGONSCAN_API_KEY,
+      harmony: process.env.HARMONYSCAN_API_KEY,
+      harmonyTest: process.env.HARMONYSCAN_API_KEY,
+      bsc: process.env.BSCSCAN_API_KEY,
+      bscTestnet: process.env.BSCSCAN_API_KEY,
     },
   },
   gasReporter: {
