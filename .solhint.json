@@ -12,7 +12,8 @@
     "max-line-length": ["warn", 120],
     "function-max-lines": "off",
     "code-complexity": ["warn", 15],
-    "named-return-values": "off",
-    "no-console": "off"
+    "gas-named-return-values": "off",
+    "no-console": "off",
+    "foundry-test-functions": "off"
   }
 }

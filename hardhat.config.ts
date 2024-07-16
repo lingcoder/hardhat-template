@@ -135,7 +135,7 @@ export default {
     flat: false,
   },
   solidity: {
-    version: "0.8.24",
+    version: "0.8.26",
     settings: {
       optimizer: {
         enabled: false,
