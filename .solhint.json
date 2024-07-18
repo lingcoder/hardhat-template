@@ -14,6 +14,11 @@
     "code-complexity": ["warn", 15],
     "gas-named-return-values": "off",
     "no-console": "off",
+    "gas-multitoken1155": "off",
+    "immutable-vars-naming": "off",
+    "gas-length-in-loops": "off",
+    "gas-increment-by-one": "off",
+    "comprehensive-interface": "off",
     "foundry-test-functions": "off"
   }
 }
