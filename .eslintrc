@@ -43,7 +43,7 @@
     "no-undef": "error",
     "no-use-before-define": "off",
     "no-var": "error",
-    "object-curly-spacing": ["error", "always"],
+    "object-curly-spacing": "off",
     "prefer-const": "error",
     "quotes": "off",
     "semi": ["error", "always"],

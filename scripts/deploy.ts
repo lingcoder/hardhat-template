@@ -5,8 +5,8 @@ async function main() {
 
   const instance = await ethers.deployContract("Greeter", [], {
     value: ethValue,
+    gasLimit: BigInt("2500000"),
   });
-
   await instance.waitForDeployment();
 
   const timeWait = 15;
