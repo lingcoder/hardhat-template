@@ -19,6 +19,8 @@
     "gas-length-in-loops": "off",
     "gas-increment-by-one": "off",
     "comprehensive-interface": "off",
+    "named-return-values": "off",
+    "imports-order": "off",
     "foundry-test-functions": "off"
   }
 }
