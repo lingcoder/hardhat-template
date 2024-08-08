@@ -11,6 +11,7 @@
     "contract",
     "solidity"
   ],
+  "type": "module",
   "engines": {
     "node": ">=20.0.0",
     "pnpm": ">=9.5.0"
@@ -22,6 +23,8 @@
   "devDependencies": {
     "@commitlint/cli": "^19.4.0",
     "@commitlint/config-conventional": "^19.2.2",
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.8.0",
     "@metamask/eth-sig-util": "^7.0.3",
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.7",
     "@nomicfoundation/hardhat-ethers": "^3.0.6",
@@ -52,6 +55,7 @@
     "eslint-plugin-promise": "^6.6.0",
     "ethers": "^6.13.2",
     "fs-extra": "^11.2.0",
+    "globals": "^15.9.0",
     "hardhat": "^2.22.8",
     "hardhat-abi-exporter": "^2.10.1",
     "hardhat-contract-sizer": "^2.10.0",
@@ -86,11 +90,11 @@
     "abi": "npx hardhat export-abi",
     "coverage": "npx hardhat coverage",
     "size": "npx hardhat size-contracts",
-    "lint": "pnpm lint:sol && pnpm lint:ts && pnpm format:check",
-    "lint:sol": "solhint --max-warnings 0 contracts/**/*.sol",
-    "lint:ts": "eslint --ext .js,.ts .",
-    "format:check": "prettier --check **/*.{js,ts,sol,json}",
-    "format:write": "prettier --write **/*.{js,ts,sol,json}"
+    "lint": "pnpm solhint && pnpm eslint && pnpm format:check",
+    "solhint": "solhint --max-warnings 0 contracts/**/*.sol",
+    "eslint": "eslint",
+    "format:check": "prettier --check **/*.{ts,sol}",
+    "format:write": "prettier --write **/*.{ts,sol}"
   },
   "dependencies": {
     "cross-env": "^7.0.3",
