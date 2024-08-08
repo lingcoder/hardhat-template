@@ -33,15 +33,15 @@ export default {
       accounts: [process.env.PRIVATE_KEY],
       timeout: 10 * 60 * 1000,
     },
-    bnb: {
-      url: "https://bsc-dataseed.binance.org/",
+    bsc: {
+      url: `https://bsc-mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
       accounts: [process.env.PRIVATE_KEY],
       chainId: 56,
       live: true,
       saveDeployments: true,
     },
-    bnbTest: {
-      url: "https://data-seed-prebsc-2-s2.binance.org:8545/",
+    bscTestnet: {
+      url: `https://bsc-testnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
       accounts: [process.env.PRIVATE_KEY],
       chainId: 97,
       live: true,
