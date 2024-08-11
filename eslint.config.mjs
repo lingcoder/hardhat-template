@@ -1,5 +1,6 @@
 // eslint-disable-next-line strict
 import mocha from "eslint-plugin-mocha";
+import prettier from "eslint-plugin-prettier";
 import globals from "globals";
 import tsParser from "@typescript-eslint/parser";
 import path from "node:path";
@@ -15,7 +16,9 @@ const compat = new FlatCompat({
   allConfig: js.configs.all,
 });
 
-export default [{
+export default [
+  ...compat.extends('eslint:recommended', 'plugin:prettier/recommended', 'prettier'),
+  {
   files: ["**/*.ts", "**/*.tsx"],
   ignores: [
     "**/node_modules",
@@ -28,9 +31,9 @@ export default [{
     "lib/openzeppelin-contracts",
     "typechain-types/*",
   ],
-}, ...compat.extends("standard"), {
+}, {
   plugins: {
-    mocha,
+    mocha, prettier
   },
 
   languageOptions: {

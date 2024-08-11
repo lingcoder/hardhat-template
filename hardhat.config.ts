@@ -1,3 +1,5 @@
+"use strict";
+
 import "./task/accounts";
 import "@nomicfoundation/hardhat-toolbox";
 import "@nomicfoundation/hardhat-verify";

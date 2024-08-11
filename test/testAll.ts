@@ -1,3 +1,6 @@
+"use strict";
+
+// eslint-disable-next-line no-redeclare
 import { expect } from "chai";
 import { ethers, network } from "hardhat";
 

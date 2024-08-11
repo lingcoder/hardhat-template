@@ -1,5 +1,6 @@
 {
-  "extends": "solhint:all",
+  "extends": "solhint:recommended",
+  "plugins": [],
   "rules": {
     "compiler-version": ["error", ">=0.8.21"],
     "func-visibility": ["warn", { "ignoreConstructors": true }],
@@ -12,15 +13,10 @@
     "max-line-length": ["warn", 120],
     "function-max-lines": "off",
     "code-complexity": ["warn", 15],
-    "gas-named-return-values": "off",
     "no-console": "off",
-    "gas-multitoken1155": "off",
     "immutable-vars-naming": "off",
-    "gas-length-in-loops": "off",
-    "gas-increment-by-one": "off",
     "comprehensive-interface": "off",
     "named-return-values": "off",
-    "imports-order": "off",
-    "foundry-test-functions": "off"
+    "foundry-test-functions": "off"  
   }
 }

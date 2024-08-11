@@ -1,3 +1,6 @@
+"use strict";
+
+// eslint-disable-next-line no-redeclare
 import { ethers, run } from "hardhat";
 
 async function main() {
