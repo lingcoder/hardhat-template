@@ -92,8 +92,8 @@
     "lint": "pnpm solhint && pnpm lint:ts && pnpm format:check",
     "solhint": "solhint --max-warnings 0 contracts/**/*.sol",
     "lint:ts": "eslint scripts/**/*.ts test/**/*.ts",
-    "format:check": "prettier --check **/*.{ts,sol}",
-    "format:write": "prettier --write **/*.{ts,sol}"
+    "format:check": "prettier --check task/**/*.{ts,sol} contracts/**/*.{ts,sol} test/**/*.{ts,sol}",
+    "format:write": "prettier --write task/**/*.{ts,sol} contracts/**/*.{ts,sol} test/**/*.{ts,sol}"
   },
   "dependencies": {
     "cross-env": "^7.0.3",

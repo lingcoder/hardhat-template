@@ -4,13 +4,16 @@
 import { ethers, run } from "hardhat";
 
 async function main() {
-  const ethValue = ethers.parseEther("0.0000000001");
+  console.log("Deploying USDT contract...");
 
-  const instance = await ethers.deployContract("Greeter", [], {
-    value: ethValue,
-    gasLimit: BigInt("2500000"),
+  const instance = await ethers.deployContract("USDT", [], {
+    gasLimit: BigInt("5000000"), 
   });
+
   await instance.waitForDeployment();
+
+  const deployedAddress = await instance.getAddress();
+  console.log(`USDT deployed to: ${deployedAddress}`);
 
   const timeWait = 15;
   console.log(`waiting for ${timeWait} seconds... to verify contract`);
